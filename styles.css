@@ -1,0 +1,119 @@
+/* General styles (unchanged) */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-color: #fff8dc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center navigation items */
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    color: #fff8dc;
+}
+
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav ul li ul.dropdown li {
+    width: 100%;
+    text-align: left;
+}
+
+nav ul li ul.dropdown li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+}
+
+nav ul li ul.dropdown li a:hover {
+    background-color: #575757;
+    color: #fff8dc;
+}
+
+.content {
+    padding: 20px;
+    text-align: center; /* Center text in the content sections */
+    background-color: #fff8dc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #777;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Highlight post styles */
+.highlights h2 {
+    text-align: center;
+}
+
+.post-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.post-links li {
+    margin: 10px 0;
+}
+
+/* Style for featured post links */
+.post-links li a.featured-link {
+    color: blue; /* Make the featured post links blue */
+}
+
+.post-links li a.featured-link:hover {
+    text-decoration: underline;
+}
